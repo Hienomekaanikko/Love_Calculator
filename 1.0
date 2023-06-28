@@ -8,7 +8,6 @@ low2 = name2.lower()
 
 #Calculate how many letters of "true" matches with the names.
 both_names = low1 + low2
-print(both_names)
 t = both_names.count("t")
 r = both_names.count("r")
 u = both_names.count("u")
@@ -25,7 +24,7 @@ love = l + o + v + e
 
 score = str(true) + str(love)
 score = int(score)
-if score < 10 and score < 90:
+if score < 10 or score > 90:
     print(f"Your score is {score}, you go together like coke and mentos.")
 elif score >= 40 and score <= 50:
         print(f"Your score is {score}, you are alright together.")

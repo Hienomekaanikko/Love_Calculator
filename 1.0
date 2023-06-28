@@ -3,11 +3,12 @@ print("Welcome to the Love Calculator!")
 name1 = input("What is your name? \n")
 name2 = input("What is their name? \n")
 
-name1.lower()
-name2.lower()
+low1 = name1.lower()
+low2 = name2.lower()
 
 #Calculate how many letters of "true" matches with the names.
-both_names = name1 + name2
+both_names = low1 + low2
+print(both_names)
 t = both_names.count("t")
 r = both_names.count("r")
 u = both_names.count("u")

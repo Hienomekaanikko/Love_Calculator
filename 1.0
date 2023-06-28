@@ -1,0 +1,32 @@
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+name1.lower()
+name2.lower()
+
+#Calculate how many letters of "true" matches with the names.
+both_names = name1 + name2
+t = both_names.count("t")
+r = both_names.count("r")
+u = both_names.count("u")
+e = both_names.count("e")
+
+true = t + r + u + e
+
+l = both_names.count("l")
+o = both_names.count("o")
+v = both_names.count("v")
+e = both_names.count("e")
+
+love = l + o + v + e
+
+score = str(true) + str(love)
+score = int(score)
+if score < 10 and score < 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif score >= 40 and score <= 50:
+        print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
